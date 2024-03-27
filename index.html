@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SolveMaze</title>
+    <link href="../style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div>
+      <p>
+        <strong>Problem Description</strong>: You are given a
+        <strong>N x M</strong> grid maze where N is the number of rows and M is
+        the number of columns with S as the starting point, and D as the
+        destination point. Find the shortest distance from the starting point to
+        the destination point if there are any paths. Highlight one of the
+        optimal paths. Note: You may not use points with a
+        <strong>0</strong> value.
+      </p>
+      <p>
+        <strong>Solution</strong>: Since this is a traversal problem, I'm using
+        <strong>breath-first-search</strong> to explore all the paths and
+        keeping track of the visited points and their distance. And
+        <strong>backtrack</strong> to find the most optimal/shortest path.
+      </p>
+      <p>
+        <strong>Application</strong>: E.g. Solve problems that can be
+        represented in a grid system, Find shortest path in a maze, Find minimum
+        cost between two vertex, Detect a cycle in an undirected graph etc.
+      </p>
+    </div>
+    <h3>s = start, d = destination, * = there is path, 0 = path is blocked</h3>
+    <div class="flex-container">
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+    </div>
+    <div class="flex-container">
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+    </div>
+    <div class="flex-container">
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+    </div>
+    <div class="flex-container">
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+      <div>0</div>
+    </div>
+    <div>
+      <h3 id="res"></h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
